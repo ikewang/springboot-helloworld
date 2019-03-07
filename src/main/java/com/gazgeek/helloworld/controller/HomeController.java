@@ -2,11 +2,11 @@ package com.gazgeek.helloworld.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-@RestController
+@Controller
+@RequestMapping(value = "/api/dataFactory")
 public class HomeController {
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     String home() {
         return "Hello from GazGeek!";
     }
